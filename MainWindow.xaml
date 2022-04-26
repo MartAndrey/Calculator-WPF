@@ -25,29 +25,29 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button Grid.Column="1" Grid.Row="6" Margin="1" FontSize="22" Content="0"/>
-        <Button Grid.Column="0" Grid.Row="5" Margin="1" FontSize="22">1</Button>
-        <Button Grid.Column="1" Grid.Row="5" Margin="1" FontSize="22">2</Button>
-        <Button Grid.Column="2" Grid.Row="5" Margin="1" FontSize="22">3</Button>
-        <Button Grid.Column="0" Grid.Row="4" Margin="1" FontSize="22">4</Button>
-        <Button Grid.Column="1" Grid.Row="4" Margin="1" FontSize="22">5</Button>
-        <Button Grid.Column="2" Grid.Row="4" Margin="1" FontSize="22">6</Button>
-        <Button Grid.Column="0" Grid.Row="3" Margin="1" FontSize="22">7</Button>
-        <Button Grid.Column="1" Grid.Row="3" Margin="1" FontSize="22">8</Button>
-        <Button Grid.Column="2" Grid.Row="3" Margin="1" FontSize="22">9</Button>
+        <Button Name="btn_0"  Grid.Column="1" Grid.Row="6" Margin="1" FontSize="22" Content="0" Click="btn_0_Click"/>
+        <Button Name="btn_1"  Grid.Column="0" Grid.Row="5" Margin="1" FontSize="22" Click="btn_1_Click">1</Button>
+        <Button Name="btn_2" Grid.Column="1" Grid.Row="5" Margin="1,1,0,1" FontSize="22" HorizontalAlignment="Left" Width="81" Click="btn_2_Click">2</Button>
+        <Button Name="btn_3" Grid.Column="2" Grid.Row="5" Margin="1,1,0,1" FontSize="22" HorizontalAlignment="Left" Width="81" Click="btn_3_Click">3</Button>
+        <Button Name="btn_4" Grid.Column="0" Grid.Row="4" Margin="1" FontSize="22" Click="btn_4_Click">4</Button>
+        <Button Name="btn_5" Grid.Column="1" Grid.Row="4" Margin="1" FontSize="22" Click="btn_5_Click">5</Button>
+        <Button Name="btn_6" Grid.Column="2" Grid.Row="4" Margin="1" FontSize="22" Click="btn_6_Click">6</Button>
+        <Button Name="btn_7" Grid.Column="0" Grid.Row="3" Margin="1" FontSize="22" Click="btn_7_Click">7</Button>
+        <Button Name="btn_8" Grid.Column="1" Grid.Row="3" Margin="1" FontSize="22" Click="btn_8_Click">8</Button>
+        <Button Name="btn_9" Grid.Column="2" Grid.Row="3" Margin="1" FontSize="22" Click="btn_9_Click">9</Button>
 
         <!-- Operator buttons -->
-        <Button Grid.Column="3" Grid.Row="5" Margin="1" FontSize="22">+</Button>
-        <Button Grid.Column="3" Grid.Row="4" Margin="1" FontSize="22">-</Button>
-        <Button Grid.Column="3" Grid.Row="3" Margin="1" FontSize="22">X</Button>
-        <Button Grid.Column="3" Grid.Row="2" Margin="1" FontSize="22">/</Button>
-        <Button Grid.Column="0" Grid.Row="1" Margin="1" FontSize="22">%</Button>
-        <Button Grid.Column="3" Grid.Row="6" Margin="1" FontSize="22">=</Button>
+        <Button Name="btn_Sum" Grid.Column="3" Grid.Row="5" Margin="1,1,1,0" FontSize="22" Height="59" VerticalAlignment="Top" Click="btn_Sum_Click">+</Button>
+        <Button Name="ntn_Subtraction" Grid.Column="3" Grid.Row="4" Margin="1" FontSize="22" Click="ntn_Subtraction_Click">-</Button>
+        <Button Name="btn_Multiplication" Grid.Column="3" Grid.Row="3" Margin="1" FontSize="22" Click="btn_Multiplication_Click">X</Button>
+        <Button Name="btn_Division" Grid.Column="3" Grid.Row="2" Margin="1" FontSize="22" Click="btn_Division_Click">/</Button>
+        <Button Name="btn_Module" Grid.Column="0" Grid.Row="1" Margin="1" FontSize="22">%</Button>
+        <Button Name="btn_Result" Grid.Column="3" Grid.Row="6" Margin="1" FontSize="22" Click="btn_Result_Click">=</Button>
 
         <!-- Buttons to clean -->
-        <Button Grid.Column="1" Grid.Row="1" Margin="1" FontSize="22">CE</Button>
-        <Button Grid.Column="2" Grid.Row="1" Margin="1" FontSize="22">C</Button>
-        <Button Grid.Column="3" Grid.Row="1" Margin="1" FontSize="22" Content="&lt;="></Button>
+        <Button Name="btn_CE" Grid.Column="1" Grid.Row="1" Margin="1" FontSize="22">CE</Button>
+        <Button Name="C" Grid.Column="2" Grid.Row="1" Margin="1" FontSize="22">C</Button>
+        <Button Name="btn_Delete" Grid.Column="3" Grid.Row="1" Margin="1" FontSize="22" Content="&lt;="></Button>
 
         <!-- Other buttons -->
         <Button Grid.Column="2" Grid.Row="6" Margin="1" FontSize="22">,</Button>
@@ -64,7 +64,7 @@
         <TextBlock Grid.Column="2" Grid.Row="0" Margin="0, 0, 0, 10"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2">MS</TextBlock>
         <TextBlock Grid.Column="3" Grid.Row="0" Margin="0, 0, 15,10"  HorizontalAlignment="Right" VerticalAlignment="Bottom">M`</TextBlock>
 
-        <TextBlock Grid.Column="0" Grid.ColumnSpan="4" Width="300" Height="50" TextAlignment="Right" FontSize="40" ><Bold>0</Bold></TextBlock>
+        <TextBlock Name="txt_ToShow" Grid.Column="0" Grid.ColumnSpan="4" Width="300" Height="50" TextAlignment="Right" FontSize="40" ><Bold>0</Bold></TextBlock>
         <TextBlock Grid.ColumnSpan="2" Height="30" Width="80" Margin="0, 0, 40, 110" FontSize="20">Standard</TextBlock>
     </Grid>
 </Window>
