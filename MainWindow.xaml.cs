@@ -36,7 +36,7 @@ namespace Calculator
                 number1 += "" + 0;
                 txt_ToShow.Text = number1;
             }
-            else 
+            else
             {
                 number2 += "" + 0;
                 txt_ToShow.Text = number2;
@@ -194,19 +194,60 @@ namespace Calculator
             switch (operation)
             {
                 case "+":
-                    txt_ToShow.Text = (Convert.ToInt32(number1)+ Convert.ToInt32(number2)).ToString();
+                    txt_ToShow.Text = (Convert.ToInt32(number1) + Convert.ToInt32(number2)).ToString();
                     break;
                 case "-":
-
+                    txt_ToShow.Text = (Convert.ToInt32(number1) - Convert.ToInt32(number2)).ToString();
                     break;
 
                 case "*":
-
+                    txt_ToShow.Text = (Convert.ToInt32(number1) * Convert.ToInt32(number2)).ToString();
                     break;
 
                 case "/":
-
+                    txt_ToShow.Text = (Convert.ToInt32(number1) / Convert.ToInt32(number2)).ToString();
                     break;
+            }
+        }
+
+        private void btn_Delete_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "")
+            {
+                number1 = number1.Remove(number1.Length - 1);
+
+                txt_ToShow.Text = number1;
+            }
+            else
+            {
+                number2 = number2.Remove(number2.Length - 1);
+
+                txt_ToShow.Text = number2;
+            }
+        }
+
+        private void C_Click(object sender, RoutedEventArgs e)
+        {
+            number1 = "";
+            number2 = "";
+            operation = "";
+
+            txt_ToShow.Text = "0";
+        }
+
+        private void btn_CE_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "")
+            {
+                number1 = "";
+
+                txt_ToShow.Text = number1;
+            }
+            else
+            {
+                number2 = "";
+
+                txt_ToShow.Text = number2;
             }
         }
     }

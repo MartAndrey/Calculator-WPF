@@ -45,9 +45,9 @@
         <Button Name="btn_Result" Grid.Column="3" Grid.Row="6" Margin="1" FontSize="22" Click="btn_Result_Click">=</Button>
 
         <!-- Buttons to clean -->
-        <Button Name="btn_CE" Grid.Column="1" Grid.Row="1" Margin="1" FontSize="22">CE</Button>
-        <Button Name="C" Grid.Column="2" Grid.Row="1" Margin="1" FontSize="22">C</Button>
-        <Button Name="btn_Delete" Grid.Column="3" Grid.Row="1" Margin="1" FontSize="22" Content="&lt;="></Button>
+        <Button Name="btn_CE" Grid.Column="1" Grid.Row="1" Margin="1" FontSize="22" Click="btn_CE_Click">CE</Button>
+        <Button Name="C" Grid.Column="2" Grid.Row="1" Margin="1" FontSize="22" Click="C_Click">C</Button>
+        <Button Name="btn_Delete" Grid.Column="3" Grid.Row="1" Margin="1" FontSize="22" Content="&lt;=" Click="btn_Delete_Click"></Button>
 
         <!-- Other buttons -->
         <Button Grid.Column="2" Grid.Row="6" Margin="1" FontSize="22">,</Button>
