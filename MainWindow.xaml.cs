@@ -172,21 +172,25 @@ namespace Calculator
         private void btn_Sum_Click(object sender, RoutedEventArgs e)
         {
             operation = "+";
+            txt_ToShow2.Text = number1 + " +";
         }
 
         private void ntn_Subtraction_Click(object sender, RoutedEventArgs e)
         {
             operation = "-";
+            txt_ToShow2.Text = number1 + " -";
         }
 
         private void btn_Multiplication_Click(object sender, RoutedEventArgs e)
         {
             operation = "*";
+            txt_ToShow2.Text = number1 + " *";
         }
 
         private void btn_Division_Click(object sender, RoutedEventArgs e)
         {
             operation = "/";
+            txt_ToShow2.Text = number1 + " /";
         }
 
         private void btn_Result_Click(object sender, RoutedEventArgs e)
@@ -208,6 +212,8 @@ namespace Calculator
                     txt_ToShow.Text = (Convert.ToInt32(number1) / Convert.ToInt32(number2)).ToString();
                     break;
             }
+
+            txt_ToShow2.Text = $"{number1} {operation} {number2} =";
         }
 
         private void btn_Delete_Click(object sender, RoutedEventArgs e)
@@ -233,6 +239,7 @@ namespace Calculator
             operation = "";
 
             txt_ToShow.Text = "0";
+            txt_ToShow2.Text = "";
         }
 
         private void btn_CE_Click(object sender, RoutedEventArgs e)
@@ -241,14 +248,14 @@ namespace Calculator
             {
                 number1 = "";
 
-                txt_ToShow.Text = number1;
+                txt_ToShow.Text = "0";
             }
             else
             {
                 number2 = "";
 
-                txt_ToShow.Text = number2;
-            }
+                txt_ToShow.Text = "0";
+            }          
         }
     }
 }
