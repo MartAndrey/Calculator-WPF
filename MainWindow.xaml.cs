@@ -199,21 +199,30 @@ namespace Calculator
             {
                 case "+":
                     txt_ToShow.Text = (Convert.ToInt32(number1) + Convert.ToInt32(number2)).ToString();
+                    txt_ToShow2.Text = $"{number1} {operation} {number2} =";
+                    number1 = (Convert.ToInt32(number1) + Convert.ToInt32(number2)).ToString();
                     break;
                 case "-":
                     txt_ToShow.Text = (Convert.ToInt32(number1) - Convert.ToInt32(number2)).ToString();
+                    txt_ToShow2.Text = $"{number1} {operation} {number2} =";
+                    number1 = (Convert.ToInt32(number1) - Convert.ToInt32(number2)).ToString();
                     break;
 
                 case "*":
                     txt_ToShow.Text = (Convert.ToInt32(number1) * Convert.ToInt32(number2)).ToString();
+                    txt_ToShow2.Text = $"{number1} {operation} {number2} =";
+                    number1 = (Convert.ToInt32(number1) * Convert.ToInt32(number2)).ToString();
                     break;
 
                 case "/":
                     txt_ToShow.Text = (Convert.ToInt32(number1) / Convert.ToInt32(number2)).ToString();
+                    txt_ToShow2.Text = $"{number1} {operation} {number2} =";
+                    number1 = (Convert.ToInt32(number1) / Convert.ToInt32(number2)).ToString();
                     break;
             }
 
-            txt_ToShow2.Text = $"{number1} {operation} {number2} =";
+            operation = "";
+            number2 = "";
         }
 
         private void btn_Delete_Click(object sender, RoutedEventArgs e)
@@ -255,7 +264,7 @@ namespace Calculator
                 number2 = "";
 
                 txt_ToShow.Text = "0";
-            }          
+            }
         }
     }
 }
