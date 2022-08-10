@@ -253,17 +253,27 @@ namespace Calculator
 
         private void btn_CE_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
+            
+            if (number1 != "" && operation == "")
             {
                 number1 = "";
 
-                txt_ToShow.Text = "0";
+                txt_ToShow.Text = "J0";
             }
-            else
+            else if (number1 != "" && operation != "" && number2 != "")
             {
                 number2 = "";
 
-                txt_ToShow.Text = "0";
+                txt_ToShow.Text = "H0";
+            }
+            else/* if (number1 != "" && operation == "" && number2 == "")*/
+            {
+                number1 = "";
+                number2 = "";
+                operation = "";
+
+                txt_ToShow.Text = "0gfdg";
+                txt_ToShow2.Text = "";
             }
         }
     }

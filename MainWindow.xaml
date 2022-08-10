@@ -21,51 +21,37 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_0" Grid.Column="1" Grid.Row="6" Margin="1" FontSize="22" Content="0" Click="btn_0_Click"/>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_1" Grid.Column="0" Grid.Row="5" Margin="1" FontSize="22" Click="btn_1_Click">1</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_2" Grid.Column="1" Grid.Row="5" Margin="1" FontSize="22" Click="btn_2_Click">2</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_3" Grid.Column="2" Grid.Row="5" Margin="1" FontSize="22" Click="btn_3_Click">3</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_4" Grid.Column="0" Grid.Row="4" Margin="1" FontSize="22" Click="btn_4_Click">4</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_5" Grid.Column="1" Grid.Row="4" Margin="1" FontSize="22" Click="btn_5_Click">5</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_6" Grid.Column="2" Grid.Row="4" Margin="1" FontSize="22" Click="btn_6_Click">6</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_7" Grid.Column="0" Grid.Row="3" Margin="1" FontSize="22" Click="btn_7_Click">7</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_8" Grid.Column="1" Grid.Row="3" Margin="1" FontSize="22" Click="btn_8_Click">8</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_9" Grid.Column="2" Grid.Row="3" Margin="1" FontSize="22" Click="btn_9_Click">9</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_0" Grid.ColumnSpan="2" Grid.Row="5" Margin="1,1,1,1" FontSize="22" Content="0" Click="btn_0_Click"/>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_1" Grid.Column="0" Grid.Row="4" Margin="1,1,1,1" FontSize="22" Click="btn_1_Click">1</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_2" Grid.Column="1" Grid.Row="4" Margin="1,1,1,1" FontSize="22" Click="btn_2_Click">2</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_3" Grid.Column="2" Grid.Row="4" Margin="1,1,1,1" FontSize="22" Click="btn_3_Click">3</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_4" Grid.Column="0" Grid.Row="3" Margin="1,1,1,1" FontSize="22" Click="btn_4_Click">4</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_5" Grid.Column="1" Grid.Row="3" Margin="1,1,1,1" FontSize="22" Click="btn_5_Click">5</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_6" Grid.Column="2" Grid.Row="3" Margin="1,1,1,1" FontSize="22" Click="btn_6_Click">6</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_7" Grid.Column="0" Grid.Row="2" Margin="1,1,1,1" FontSize="22" Click="btn_7_Click">7</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_8" Grid.Column="1" Grid.Row="2" Margin="1,1,1,1" FontSize="22" Click="btn_8_Click">8</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_9" Grid.Column="2" Grid.Row="2" Margin="1,1,1,1" FontSize="22" Click="btn_9_Click">9</Button>
 
         <!-- Operator buttons -->
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Sum" Grid.Column="3" Grid.Row="5" Margin="1" FontSize="22" Click="btn_Sum_Click">+</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="ntn_Subtraction" Grid.Column="3" Grid.Row="4" Margin="1" FontSize="22" Click="ntn_Subtraction_Click">-</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Multiplication" Grid.Column="3" Grid.Row="3" Margin="1" FontSize="22" Click="btn_Multiplication_Click">X</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Division" Grid.Column="3" Grid.Row="2" Margin="1" FontSize="22" Click="btn_Division_Click">/</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Module" Grid.Column="0" Grid.Row="1" Margin="1" FontSize="22">%</Button>
-        <Button BorderBrush="#3F8DE3" FontWeight="Bold" Background="#3F8DE3" Foreground="White" Name="btn_Result" Grid.Column="3" Grid.Row="6" Margin="1" FontSize="22" Click="btn_Result_Click">=</Button>
+        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Sum" Grid.Column="3" Grid.Row="4" Margin="1,1,1,1" FontSize="22" Click="btn_Sum_Click">+</Button>
+        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="ntn_Subtraction" Grid.Column="3" Grid.Row="3" Margin="1,1,1,1" FontSize="22" Click="ntn_Subtraction_Click">-</Button>
+        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Multiplication" Grid.Column="3" Grid.Row="2" Margin="1,1,1,1" FontSize="22" Click="btn_Multiplication_Click">*</Button>
+        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Division" Grid.Column="3" Grid.Row="1" Margin="1,1,1,1" FontSize="22" Click="btn_Division_Click">/</Button>
+        <Button BorderBrush="#3F8DE3" FontWeight="Bold" Background="#3F8DE3" Foreground="White" Name="btn_Result" Grid.Column="3" Grid.Row="6" Margin="1,1,1,1" FontSize="22" Click="btn_Result_Click">=</Button>
 
         <!-- Buttons to clean -->
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_CE" Grid.Column="1" Grid.Row="1" Margin="1" FontSize="22" Click="btn_CE_Click">CE</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="C" Grid.Column="2" Grid.Row="1" Margin="1" FontSize="22" Click="C_Click">C</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Delete" Grid.Column="3" Grid.Row="1" Margin="1" FontSize="22" Content="&lt;=" Click="btn_Delete_Click"></Button>
+        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_CE" Grid.Column="0" Grid.Row="1" Margin="1,1,1,1" FontSize="22" Click="btn_CE_Click">CE</Button>
+        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="C" Grid.Column="1" Grid.Row="1" Margin="1,1,1,1" FontSize="22" Click="C_Click">C</Button>
+        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Delete" Grid.Column="2" Grid.Row="1" Margin="1,1,1,1" FontSize="22" Content="&lt;=" Click="btn_Delete_Click"></Button>
 
         <!-- Other buttons -->
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Grid.Column="2" Grid.Row="6" Margin="1" FontSize="22">,</Button>
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Grid.Column="0" Grid.Row="6" Margin="1" FontSize="22">+/-</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Grid.Column="0" Grid.Row="2" Margin="1" FontSize="22">1/x</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Grid.Column="1" Grid.Row="2" Margin="1" FontSize="22">x2</Button>
-        <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Grid.Column="2" Grid.Row="2" Margin="1" FontSize="22">2/-X</Button>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Grid.Column="2" Grid.Row="6" Margin="1,1,1,1" FontSize="22">,</Button>
 
-
-        <TextBlock Foreground="White" Grid.Column="0" Grid.Row="0" Margin="15,10"  HorizontalAlignment="Left" VerticalAlignment="Bottom">MC</TextBlock>
-        <TextBlock Foreground="White" Grid.Column="0" Grid.Row="0" Margin="0,0,70,10"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.ColumnSpan="2">MR</TextBlock>
-        <TextBlock Foreground="White" Grid.Column="1" Grid.Row="0" Margin="0, 0, 15, 10"  HorizontalAlignment="Right" VerticalAlignment="Bottom">M+</TextBlock>
-        <TextBlock Foreground="White" Grid.Column="2" Grid.Row="0" Margin="15,0,0,10"  HorizontalAlignment="Left" VerticalAlignment="Bottom">M-</TextBlock>
-        <TextBlock Foreground="White" Grid.Column="2" Grid.Row="0" Margin="0, 0, 0, 10"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2">MS</TextBlock>
-        <TextBlock Foreground="White" Grid.Column="3" Grid.Row="0" Margin="0, 0, 15,10"  HorizontalAlignment="Right" VerticalAlignment="Bottom">M`</TextBlock>
-
-        <TextBlock Foreground="White" Name="txt_ToShow" Grid.Column="0" Grid.ColumnSpan="4" Width="300" Height="50" TextAlignment="Right" FontSize="40" ><Bold>0</Bold></TextBlock>
-        <TextBlock Foreground="Gray" Name="txt_ToShow2" Grid.Column="2" Width="100" Height="30" TextAlignment="Right" FontSize="15" Margin="30,30,0,80" Grid.ColumnSpan="2" ><Bold></Bold></TextBlock>
-        <TextBlock Foreground="White" Grid.ColumnSpan="2" Height="30" Width="80" Margin="0, 0, 40, 110" FontSize="20">Standard</TextBlock>
+        <TextBlock Foreground="White" Name="txt_ToShow" Grid.Column="0" Grid.ColumnSpan="4" Width="300" Height="50" TextAlignment="Right" FontSize="40" Margin="0,50,16,50" ><Bold>0</Bold></TextBlock>
+        <TextBlock Foreground="Gray" Name="txt_ToShow2" Grid.Column="2" Width="100" Height="30" TextAlignment="Right" FontSize="15" Margin="40,35,18,85" Grid.ColumnSpan="2" ><Bold></Bold></TextBlock>
+        <TextBlock Foreground="White" Grid.ColumnSpan="2" Height="30" Width="80" Margin="18,5,63,115" FontSize="20">Standard</TextBlock>
     </Grid>
 </Window>
