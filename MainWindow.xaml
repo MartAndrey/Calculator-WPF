@@ -24,7 +24,7 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_0" Grid.ColumnSpan="2" Grid.Row="5" Margin="1,1,1,1" FontSize="22" Content="0" Click="btn_0_Click"/>
+        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_0" Grid.ColumnSpan="2" Grid.Row="5" Margin="1,1,-40,1" FontSize="22" Content="0" Click="btn_0_Click"/>
         <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_1" Grid.Column="0" Grid.Row="4" Margin="1,1,1,1" FontSize="22" Click="btn_1_Click">1</Button>
         <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_2" Grid.Column="1" Grid.Row="4" Margin="1,1,1,1" FontSize="22" Click="btn_2_Click">2</Button>
         <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Name="btn_3" Grid.Column="2" Grid.Row="4" Margin="1,1,1,1" FontSize="22" Click="btn_3_Click">3</Button>
@@ -40,7 +40,7 @@
         <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="ntn_Subtraction" Grid.Column="3" Grid.Row="3" Margin="1,1,1,1" FontSize="22" Click="ntn_Subtraction_Click">-</Button>
         <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Multiplication" Grid.Column="3" Grid.Row="2" Margin="1,1,1,1" FontSize="22" Click="btn_Multiplication_Click">*</Button>
         <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Division" Grid.Column="3" Grid.Row="1" Margin="1,1,1,1" FontSize="22" Click="btn_Division_Click">/</Button>
-        <Button BorderBrush="#3F8DE3" FontWeight="Bold" Background="#3F8DE3" Foreground="White" Name="btn_Result" Grid.Column="3" Grid.Row="6" Margin="1,1,1,1" FontSize="22" Click="btn_Result_Click">=</Button>
+        <Button BorderBrush="#3F8DE3" FontWeight="Bold" Background="#3F8DE3" Foreground="White" Name="btn_Result" Grid.ColumnSpan="4" Grid.Row="6" Margin="200,1,1,1" FontSize="22" Click="btn_Result_Click">=</Button>
 
         <!-- Buttons to clean -->
         <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_CE" Grid.Column="0" Grid.Row="1" Margin="1,1,1,1" FontSize="22" Click="btn_CE_Click">CE</Button>
@@ -48,8 +48,6 @@
         <Button BorderBrush="#2C2D2E" Background="#2C2D2E" Foreground="White" Name="btn_Delete" Grid.Column="2" Grid.Row="1" Margin="1,1,1,1" FontSize="22" Content="&lt;=" Click="btn_Delete_Click"></Button>
 
         <!-- Other buttons -->
-        <Button BorderBrush="Black" FontWeight="Bold" Background="Black" Foreground="White" Grid.Column="2" Grid.Row="6" Margin="1,1,1,1" FontSize="22">,</Button>
-
         <TextBlock Foreground="White" Name="txt_ToShow" Grid.Column="0" Grid.ColumnSpan="4" Width="300" Height="50" TextAlignment="Right" FontSize="40" Margin="0,50,16,50" ><Bold>0</Bold></TextBlock>
         <TextBlock Foreground="Gray" Name="txt_ToShow2" Grid.Column="2" Width="100" Height="30" TextAlignment="Right" FontSize="15" Margin="40,35,18,85" Grid.ColumnSpan="2" ><Bold></Bold></TextBlock>
         <TextBlock Foreground="White" Grid.ColumnSpan="2" Height="30" Width="80" Margin="18,5,63,115" FontSize="20">Standard</TextBlock>

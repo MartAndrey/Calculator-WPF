@@ -198,26 +198,26 @@ namespace Calculator
             switch (operation)
             {
                 case "+":
-                    txt_ToShow.Text = (Convert.ToInt32(number1) + Convert.ToInt32(number2)).ToString();
+                    txt_ToShow.Text = (Convert.ToDouble(number1) + Convert.ToDouble(number2)).ToString();
                     txt_ToShow2.Text = $"{number1} {operation} {number2} =";
-                    number1 = (Convert.ToInt32(number1) + Convert.ToInt32(number2)).ToString();
+                    number1 = (Convert.ToDouble(number1) + Convert.ToDouble(number2)).ToString();
                     break;
                 case "-":
-                    txt_ToShow.Text = (Convert.ToInt32(number1) - Convert.ToInt32(number2)).ToString();
+                    txt_ToShow.Text = (Convert.ToDouble(number1) - Convert.ToDouble(number2)).ToString();
                     txt_ToShow2.Text = $"{number1} {operation} {number2} =";
-                    number1 = (Convert.ToInt32(number1) - Convert.ToInt32(number2)).ToString();
+                    number1 = (Convert.ToDouble(number1) - Convert.ToDouble(number2)).ToString();
                     break;
 
                 case "*":
-                    txt_ToShow.Text = (Convert.ToInt32(number1) * Convert.ToInt32(number2)).ToString();
+                    txt_ToShow.Text = (Convert.ToDouble(number1) * Convert.ToDouble(number2)).ToString();
                     txt_ToShow2.Text = $"{number1} {operation} {number2} =";
-                    number1 = (Convert.ToInt32(number1) * Convert.ToInt32(number2)).ToString();
+                    number1 = (Convert.ToDouble(number1) * Convert.ToDouble(number2)).ToString();
                     break;
 
                 case "/":
-                    txt_ToShow.Text = (Convert.ToInt32(number1) / Convert.ToInt32(number2)).ToString();
+                    txt_ToShow.Text = (Convert.ToDouble(number1) / Convert.ToDouble(number2)).ToString();
                     txt_ToShow2.Text = $"{number1} {operation} {number2} =";
-                    number1 = (Convert.ToInt32(number1) / Convert.ToInt32(number2)).ToString();
+                    number1 = (Convert.ToDouble(number1) / Convert.ToDouble(number2)).ToString();
                     break;
             }
 
@@ -258,22 +258,17 @@ namespace Calculator
             {
                 number1 = "";
 
-                txt_ToShow.Text = "J0";
+                txt_ToShow.Text = "0";
             }
             else if (number1 != "" && operation != "" && number2 != "")
             {
                 number2 = "";
 
-                txt_ToShow.Text = "H0";
+                txt_ToShow.Text = "0";
             }
-            else/* if (number1 != "" && operation == "" && number2 == "")*/
+            else
             {
-                number1 = "";
-                number2 = "";
-                operation = "";
-
-                txt_ToShow.Text = "0gfdg";
-                txt_ToShow2.Text = "";
+                C_Click(sender, e);
             }
         }
     }
